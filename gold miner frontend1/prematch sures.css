@@ -1,0 +1,611 @@
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  overflow-y: scroll;
+}
+
+.card,
+.card2,
+.card3 {
+  width: 100%;
+  border: 1px solid blue;
+  background-color: rgb(228, 242, 254);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #oddsxA,
+  #odds1,
+  #odds12,
+  #over,
+  #under,
+  #odds2,
+  #odds3,
+  #oddsA,
+  #oddsB,
+  #stake2,
+  #stakeA,
+  #stakeB,
+  #budget1,
+  #budget2,
+  #budget3,
+  #budget4,
+  #budgetA,
+  #budgetB,
+  #budgetC,
+  #budgetX,
+  #budgetY,
+  #budgetZ {
+    width: 50%;
+  }
+  .lebel1,
+  .lebel2,
+  .label3,
+  .label5,
+  .label6,
+  .labelB,
+  .labelC,
+  .labelD,
+  .labelE {
+    padding-inline: 10px;
+    font-size: 0.7rem;
+  }
+
+  .lebel4,
+  .lebel7 {
+    padding-inline: 13px;
+    width: 80%;
+    font-size: 0.7rem;
+  }
+  .homeTeam {
+    text-align: right;
+    width: 30%;
+    padding-inline: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(228, 242, 254);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .awayTeam {
+    text-align: right;
+    width: 30%;
+    padding-inline: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(228, 242, 254);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .timeDate {
+    text-align: center;
+    width: 30%;
+    padding-inline: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(228, 242, 254);
+  }
+
+  .part1 {
+    width: 100%;
+    display: flex;
+    font-size: 0.9rem;
+  }
+  .part2 {
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+  }
+
+  .part11 {
+    width: 100%;
+    display: flex;
+    font-size: 0.9rem;
+  }
+  .part22 {
+    width: 100%;
+    display: flex;
+    font-size: 0.9rem;
+  }
+  .part33 {
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+  }
+  .part44 {
+    width: 100%;
+    display: flex;
+    font-size: 0.9rem;
+  }
+
+  .first {
+    display: block;
+  }
+}
+.timeDateTittle {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: rgb(120, 218, 240);
+  border-radius: 5px;
+  color: rgb(1, 4, 55);
+  font-weight: 700;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.teams {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 5px;
+  background-color: rgb(120, 218, 240);
+  border-radius: 5px;
+  color: rgb(1, 4, 55);
+  font-weight: 700;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.timeDate {
+  text-align: center;
+  width: 30%;
+  padding-inline: 5px;
+  padding-bottom: 35px;
+  border-radius: 5px;
+  background-color: rgb(228, 242, 254);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.homeTeam {
+  text-align: right;
+  width: 30%;
+  padding-inline: 5px;
+  padding-bottom: 35px;
+  border-radius: 5px;
+  background-color: rgb(228, 242, 254);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.awayTeam {
+  text-align: right;
+  width: 30%;
+  padding-inline: 5px;
+  padding-bottom: 35px;
+  border-radius: 5px;
+  background-color: rgb(228, 242, 254);
+}
+.vs {
+  text-align: center;
+  width: 10%;
+  font-size: 0.7rem;
+  padding-inline: 5px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.home,
+.under {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.draw {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.win1or2,
+.over {
+  margin-right: 3.2rem;
+  text-align: right;
+  width: 67%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.away {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.odd1 {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: blue;
+  font-weight: 700;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.oddx,
+.oddxA {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: blue;
+  font-weight: 700;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.odd2,
+.oddUnder {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: blue;
+  font-weight: 700;
+}
+.odd12,
+.oddOver {
+  text-align: right;
+  width: 67%;
+  margin-right: 2.6rem;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: blue;
+  font-weight: 700;
+}
+.book1,
+.bookUder {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: rgb(40, 77, 2);
+  font-size: 12px;
+  font-weight: 700;
+}
+.bookx {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: rgb(40, 77, 2);
+  font-size: 12px;
+  font-weight: 700;
+}
+.book2 {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: rgb(40, 77, 2);
+  font-size: 12px;
+  font-weight: 700;
+}
+.book12,
+.bookOver {
+  text-align: right;
+  width: 67%;
+  margin-right: 2.6rem;
+  padding-inline: 5px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  color: rgb(40, 77, 2);
+  font-size: 12px;
+  font-weight: 700;
+}
+.arb {
+  text-align: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+}
+.cent,
+.cent2,
+.cent3 {
+  text-align: center;
+  width: 100%;
+  padding-inline: 5px;
+  padding-bottom: 2px;
+  padding-top: 11px;
+  border-radius: 2px;
+  background-color: rgb(228, 242, 254);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(6, 172, 0);
+}
+.cal {
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  padding-inline: 5px;
+  padding-bottom: 2px;
+  padding-top: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .labelE {
+    font-size: 15px;
+  }
+  .formcal {
+    padding-inline: 4rem;
+  }
+  .lebel4,
+  .lebel7 {
+    padding-inline: 15px;
+  }
+  .form1,
+  .form2,
+  .form3,
+  .form4,
+  .form5 {
+    /*display: flex;
+    */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .card,
+  .card2,
+  .card3 {
+    display: flex;
+  }
+  .first {
+    width: 33%;
+    display: block;
+  }
+  .second {
+    width: 33%;
+    display: block;
+  }
+  .third {
+    width: 33%;
+    display: block;
+  }
+
+  .part1 {
+    display: flex;
+    width: 100%;
+  }
+  .part2 {
+    display: flex;
+    width: 100%;
+  }
+  .part11 {
+    display: flex;
+    width: 100%;
+  }
+  .part22 {
+    display: flex;
+    width: 100%;
+  }
+  .part33 {
+    display: flex;
+    width: 100%;
+  }
+  .part44 {
+    display: block;
+    width: 100%;
+  }
+  .arb,
+  .cent,
+  .cal {
+    width: 100%;
+  }
+  .timeDateTittle,
+  .teams {
+    background-color: rgb(228, 242, 254);
+  }
+}
+/*calculators sytles*/
+
+.popup,
+#popup2 {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: aliceblue;
+  border: 1px solid blue;
+  margin-top: 5px;
+}
+
+#closeBtn1,
+#closeBtn2,
+#closeBtn3 {
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+#closeBtn1:hover,
+#closeBtn2:hover,
+#closeBtn3:hover {
+  background-color: green;
+}
+.cal3way,
+.btncl2,
+.btncl3 {
+  background-color: rgb(198, 201, 207);
+  border-radius: 4px;
+  padding: 3px 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.cal3way:hover,
+.btncl2:hover,
+.btncl3:hover {
+  background-color: green;
+  color: white;
+}
+.arbt .arbt1 {
+  font-size: 20px;
+}
+.lebel1,
+.lebel2,
+.label3,
+.label5,
+.label6 {
+  padding-inline: 10px;
+}
+
+.bntcl,
+.btn1 {
+  width: 33%;
+  padding-inline: 1.5rem;
+}
+.form1,
+.form2,
+.form3,
+.form4,
+.form5,
+.split1,
+.split2,
+.split3,
+.split4 {
+  padding-bottom: 10px;
+  width: 100%;
+}
+.stake2 .stake1,
+.stake3 {
+  width: 100%;
+}
+.result1 p,
+.result2 p,
+.result3 p {
+  font-size: 16px;
+  font-weight: 500;
+  color: green;
+  padding-inline: 2rem;
+}
+.arbt,
+.arbt1 {
+  text-align: center;
+}
+
+#profitpercentage,
+#profitpercentage2,
+#profitpercentage3 {
+  width: 33%;
+  text-align: left;
+}
+#btnCalculator,
+#btnCalculator2,
+#btnCalculator3 {
+  font-weight: 700;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.fun {
+  display: flex;
+}
+.threeWay,
+.twoWay {
+  display: block;
+  border: 1px solid blue;
+  margin-bottom: 1rem;
+}
+.bookAndTeams,
+.mrts,
+.dateAndOdds,
+.teamz,
+.oddz {
+  display: flex;
+  padding-inline: 5px;
+}
+.teamz {
+  padding-left: 9rem;
+}
+.v {
+  padding-inline: 6px;
+}
+.mrts {
+  gap: 4rem;
+  padding-left: 13rem;
+}
+.oneTwo {
+  padding-left: 4rem;
+}

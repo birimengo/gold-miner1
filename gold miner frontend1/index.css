@@ -1,0 +1,224 @@
+body {
+  margin: top 100px;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  min-height: 100vh;
+  text-transform: capitalize;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgb(225, 239, 251);
+  z-index: 1;
+  height: 40px;
+  line-height: 0;
+}
+nav {
+  z-index: 2;
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(86, 73, 3);
+  padding: 10px 20px;
+  display: block;
+  margin-right: 20px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+nav a {
+  margin-bottom: 20px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+  #menu-toggle {
+    display: block;
+  }
+}
+
+#navbar.active {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+/*hide the menu by default*/
+#side-menu {
+  display: none;
+}
+
+/*show the side menu on small screens */
+@media (max-width: 768px) {
+  #side-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: aliceblue;
+  }
+
+  @media (max-width: 767px) {
+    header {
+      font-size: 0.5rem;
+      top: 0;
+      height: 1rem;
+      justify-content: center;
+    }
+    footer {
+      font-size: 0.5rem;
+    }
+    .tittle {
+      font-size: 1.2rem;
+    }
+  }
+}
+#side-menu.show {
+  display: block;
+}
+/*icon toggle css*/
+button#menu-toggle {
+  background-color: transparent;
+  border: 2;
+}
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 6px 0;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+/*show icon only on mobile and dissappears on wide screen*/
+
+#menu-toggle {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+}
+
+/*hide navbar by default on mobile screen sizes*/
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+}
+/*style the menu toggle button*/
+/*#menu-toggle {
+  background-color: transparent;
+  color: #d40d0d;
+  font-size: 1.5em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*side menu sytle*/
+
+#side-menu {
+  width: 35%;
+  font-size: 0.7rem;
+  display: none;
+  background-color: rgb(65, 157, 237);
+  color: #fbfafa;
+  padding: 20px;
+  height: 100%;
+}
+/*style side menu items*/
+#side-menu ul {
+  list-style-position: outside;
+  margin: 0;
+  width: 70%;
+}
+
+#side-menu li {
+  margin: 0;
+  padding: 0px;
+}
+
+#side-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 6px;
+  font-weight: 700;
+  display: block;
+}
+
+#side-menu a:hover {
+  background-color: rgba(72, 146, 210, 0.173);
+}
+
+/*style the main content*/
+
+main {
+  width: 100%;
+  padding-top: 0px;
+}
+
+/*show navbar on wide screen size*/
+/*@media only screen and (max-width: 790px) {
+  #navbar {
+    display: block;
+  }
+}
+
+/*hide the side menu on wide screen size*/
+#side-menu {
+  display: none;
+}
+/*style header*/
+header h2 {
+  color: blue;
+}
+
+/*style footer*/
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  background-color: aliceblue;
+  text-align: center;
+  color: blue;
+}
+.tittle {
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding-inline: 1rem;
+  color: rgb(25, 25, 197);
+}

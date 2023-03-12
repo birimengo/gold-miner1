@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPv"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css" <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="prematch sures.css" <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="livesures.css" <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="login.css" <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOLD MINER</title>
+  <script src="prematch-sures.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h2>GOLD MINER</h2>
+    <button id="menu-toggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </header>
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">PREMATCH VALUED ODDS</a> </li>
+      <li><a href="prematch sures.html">PREMATCH SURES</a> </li>
+      <li><a href="live sures.html">LIVE MATCH SURES</a> </li>
+      <li><a href="login.html">LOGIN</a> </li>
+    </ul>
+  </nav>
+  <aside id="side-menu">
+    <ul>
+      <li><a href="index.html">PREMATCH VALUED ODDS</a></li>
+      <li><a href="prematch sures.html">PREMATCH SURES</a></li>
+      <li><a href="live sures.html">LIVE SURES</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+    </ul>
+  </aside>
+  <div>
+    <div>
+      <h2 class="tittle">live wins</h2>
+      <div class="card">
+        <div class="first">
+          <div class="part1">
+            <div class="timeDateTittle">time $Date</div>
+            <div class="teams">teams</div>
+          </div>
+          <div class="part2">
+            <div class="timeDate">20.01.2020</div>
+            <div class="homeTeam">arsenal</div>
+            <div class="vs">vs</div>
+            <div class="awayTeam">manchester</div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="part11">
+            <div class="home">1</div>
+            <div class="draw">x</div>
+            <div class="away">2</div>
+          </div>
+          <div class="part22">
+            <div class="odd1">2.80</div>
+            <div class="oddx">7.50</div>
+            <div class="odd2">12.70</div>
+          </div>
+          <div class="part33">
+            <div class="book1">Fortbet</div>
+            <div class="bookx">betpower</div>
+            <div class="book2">paribet</div>
+          </div>
+        </div>
+        <div class="third">
+          <div class="part44">
+            <div class="arb">arbitrage results</div>
+            <div class="cent">85.7%</div>
+            <div class="cal">
+              <button id="btnCalculator">calculator</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="threeWay" style="display: none;">
+        <div id="popup" class="popup">
+          <div class="popup-content2">
+            <h3 class="arbt">arbitrage calculator</h3>
+            <div class="fun">
+              <form class="formcal">
+                <div class="form1">
+                  <label class="lebel1" for="odds1">odds 1</label>
+                  <input type="text" id="odds1" name="odds1" readonly>
+                </div>
+
+                <div class="form2">
+                  <label class="lebel2" for="odds2">odds 2</label>
+                  <input type="text" id="odds2" name="odds2" step="0.01" readonly>
+                </div>
+
+                <div class="form3">
+                  <label class="label3" for="odds3">odds 3</label>
+                  <input type="text" id="odds3" name="odds3" step="0.01" readonly>
+                </div>
+                <div class="stake2">
+                  <label class="lebel4" for="stake2">stake</label>
+                  <input type="number" id="stake2" name="stake2" step="100" required>
+                </div>
+
+
+              </form>
+
+              <form class="formcal">
+                <div class="split1">
+                  <div class="formB">
+                    <label class="labelB" for="budget1">budget 1</label>
+                    <input type="text" id="budget1" name="budget1" step="0.01" readonly>
+                  </div>
+                </div>
+
+                <div class="split2">
+                  <div class="formC">
+                    <label class="labelC" for="budget2">budget 2</label>
+                    <input type="text" id="budget2" name="budget2" step="0.01" readonly>
+                  </div>
+                </div>
+
+                <div class="split3">
+                  <div class="formD">
+                    <label class="labelD" for="budget3">budget 3</label>
+                    <input type="text" id="budget3" name="budget3" step="0.01" readonly>
+                  </div>
+                </div>
+
+                <div class="split4">
+                  <div class="formE">
+                    <label class="labelE" for="budget4">out-come </label>
+                    <input type="text" id="budget4" name="budget4" value="0" step="0.01" readonly>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+            <div style="display: flex;">
+              <div class="closeBtn1">
+                <button id="closeBtn1" onclick="closePopup()"> close</button>
+              </div>
+              <div class="bntcl">
+                <button class="cal3way" onclick="calculateThreeWay()">calculate</button>
+              </div>
+              <div class="result1">
+                <p id="profitPercentage">0000</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card2">
+      <div class="first">
+        <div class="part1">
+          <div class="timeDateTittle">time $Date</div>
+          <div class="teams">teams</div>
+        </div>
+        <div class="part2">
+          <div class="timeDate">20.01.2020</div>
+          <div class="homeTeam">arsenal</div>
+          <div class="vs">vs</div>
+          <div class="awayTeam">manchester</div>
+        </div>
+      </div>
+      <div class="second">
+        <div class="part11">
+          <div class="draw">x</div>
+
+          <div class="win1or2">12</div>
+        </div>
+        <div class="part22">
+          <div class="oddxA">2.80</div>
+
+          <div class="odd12">12.70</div>
+        </div>
+        <div class="part33">
+          <div class="bookx">Fortbet</div>
+
+          <div class="book12">paribet</div>
+        </div>
+      </div>
+      <div class="third">
+        <div class="part44">
+          <div class="arb">arbitrage results</div>
+          <div class="cent2">75.4%</div>
+          <div class="cal">
+            <button id="btnCalculator2">calculator</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="twoWay" style="display: none;">
+      <div id="popup2" class="hidden">
+        <div class="popup-content1">
+          <h3 class="arbt1">arbitrage calculator</h3>
+
+
+          <div class="fun">
+
+            <form class="formcal">
+              <div class="form2">
+                <label class="lebel2" for="odds2">odds 1</label>
+                <input type="text" id="odds12" name="odds2" step="0.01" readonly>
+              </div>
+
+              <div class="form3">
+                <label class="label3" for="odds3">odds 2</label>
+                <input type="text" id="oddsxA" name="odds3" step="0.01" readonly>
+              </div>
+              <div class="stake2">
+                <label class="lebel4" for="stake2">stake</label>
+                <input type="number" id="stakeA" name="stake2" step="100" required>
+              </div>
+
+
+            </form>
+
+            <form class="formcal">
+
+              <div class="split2">
+                <div class="formC">
+                  <label class="labelC" for="budget2">budget 1</label>
+                  <input type="text" id="budgetC" name="budget2" step="0.01" readonly>
+                </div>
+              </div>
+
+              <div class="split3">
+                <div class="formD">
+                  <label class="labelD" for="budget">budget 2</label>
+                  <input type="text" id="budgetB" name="budget3" step="0.01" readonly>
+                </div>
+              </div>
+
+              <div class="split4">
+                <div class="formE">
+                  <label class="labelE" for="budget4">out-come </label>
+                  <input type="text" id="budgetA" name="budget4" value="0" step="0.01" readonly>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div style="display: flex;">
+            <div class="closebtn2">
+              <button id="closeBtn2" onclick="closePopup()"> close</button>
+            </div>
+            <div class="btn1">
+              <button class="btncl2" onclick="calculateTwoWay()">calculate</button>
+            </div>
+            <div class="result2">
+              <p id="profitPercentage2">0000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card3">
+      <div class="first">
+        <div class="part1">
+          <div class="timeDateTittle">time $Date</div>
+          <div class="teams">teams</div>
+        </div>
+        <div class="part2">
+          <div class="timeDate">20.01.2020</div>
+          <div class="homeTeam">arsenal</div>
+          <div class="vs">vs</div>
+          <div class="awayTeam">manchester</div>
+        </div>
+      </div>
+      <div class="second">
+        <div class="part11">
+          <div class="under">under</div>
+
+          <div class="over">over</div>
+        </div>
+        <div class="part22">
+          <div class="oddUnder">2.80</div>
+
+          <div class="oddOver">12.70</div>
+        </div>
+        <div class="part33">
+          <div class="bookUder">Fortbet</div>
+
+          <div class="bookOver">paribet</div>
+        </div>
+      </div>
+      <div class="third">
+        <div class="part44">
+          <div class="arb">arbitrage results</div>
+          <div class="cent3">55.4%</div>
+          <div class="cal">
+            <button id="btnCalculator3">calculator</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="twoWay2" style="display: none;">
+      <div id="popup2" class="hidden">
+        <div class="popup-content1">
+          <h3 class="arbt1">arbitrage calculator</h3>
+          <div class="fun">
+
+            <form class="formcal">
+              <div class="form2">
+                <label class="lebel2" for="odds2">odds 1</label>
+                <input type="text" id="under" name="odds2" step="0.01" readonly>
+              </div>
+
+              <div class="form3">
+                <label class="label3" for="odds3">odds 2</label>
+                <input type="text" id="over" name="odds3" step="0.01" readonly>
+              </div>
+              <div class="stake3">
+                <label class="lebel4" for="stake2">stake</label>
+                <input type="number" id="stakeB" name="stake2" step="100" required>
+              </div>
+
+
+            </form>
+
+            <form class="formcal">
+
+              <div class="split2">
+                <div class="formC">
+                  <label class="labelC" for="budget2">budget 1</label>
+                  <input type="text" id="budgetY" name="budget2" step="0.01" readonly>
+                </div>
+              </div>
+
+              <div class="split3">
+                <div class="formD">
+                  <label class="labelD" for="budget">budget 2</label>
+                  <input type="text" id="budgetZ" name="budget3" step="0.01" readonly>
+                </div>
+              </div>
+
+              <div class="split4">
+                <div class="formE">
+                  <label class="labelE" for="budget4">out-come </label>
+                  <input type="text" id="budgetX" name="budget4" value="0" step="0.01" readonly>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div style="display: flex;">
+            <div class="closebtn3">
+              <button id="closeBtn3" onclick="closePopup()"> close</button>
+            </div>
+            <div class="btn1">
+              <button class="btncl3" onclick="calculateTwoWay()">calculate</button>
+            </div>
+            <div class="result3">
+              <p id="profitPercentage3">0000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  </main>
+  <footer>
+    <p>&COPY;2023 GOLD MINER</p>
+  </footer>
+  <script src="index.js" defer></script>
+</body>
+
+</html>
